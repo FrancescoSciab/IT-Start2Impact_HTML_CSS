@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <header style="width: 100%;" class="bg-light d-flex justify-content-between position-fixed border-bottom border-dark">
+    <header style="width: 100%; height: 20%;" class="bg-light d-flex justify-content-between position-fixed border-2 border-bottom border-dark">
 
         <div class="m-3">
             <nav>
@@ -22,41 +22,43 @@
 
         <div class="d-flex m-1">
             <nav class="d-flex align-items-center ms-1">
-                <h6><a class="pe-2 pt-2 pb-2 border-end border-dark text-decoration-none" href="#">About</a></h6>
+                <h6 class="about-nav-button"><a class="pe-2 pt-2 pb-2 border-end border-dark text-decoration-none" href="#About">About</a></h6>
             </nav>
     
             <nav class="d-flex align-items-center ms-1">
-                <h6><a class="pe-2 pt-2 pb-2 border-end border-dark text-decoration-none" href="#">Skills</a></h6>
+                <h6 class="skills-nav-button"><a class="pe-2 pt-2 pb-2 border-end border-dark text-decoration-none" href="#Skills">Skills</a></h6>
             </nav>
     
             <nav class="d-flex align-items-center ms-1">
-                <h6><a class="pe-2 pt-2 pb-2 text-decoration-none" href="#">Contact</a></h6>
+                <h6 class="contact-nav-button"><a class="pe-2 pt-2 pb-2 text-decoration-none" href="#Contact">Contact</a></h6>
             </nav>
         </div>
 
     </header>
 
 
-    <article>
+    
+    <article class="position-fixed top-20 overflow-scroll" style="height: 80%; width: 100%;">
 
-        <section class="border-bottom border-dark ms-3 me-3" style="height: 200px;"></section>
+        <section class="border-2 border-bottom border-dark ms-3 me-3" style="height: 200px;"></section>
 
-        <section class="border-bottom border-dark ms-3 me-3" style="height: 200px;"></section>
+        <section class="border-2 border-bottom border-dark ms-3 me-3" style="height: 200px;"></section>
 
-        <section class="pt-3 pb-3 border-bottom border-dark ms-3 me-3" style="height: 200px;">
+        <section id="About" class="border-2 pt-3 pb-3 border-top border-dark ms-3 me-3" style="height: 200px;">
             <h1>About</h1>
         </section>
 
-        <section class="pt-3 pb-3 border-bottom border-dark ms-3 me-3" style="height: 200px;">
+        <section id="Skills" class="border-2 pt-3 pb-3 border-top border-dark ms-3 me-3" style="height: 200px;">
             <h1>Skills</h1>
         </section>
 
-        <section class="pt-3 pb-3 border-bottom border-dark ms-3 me-3" style="height: 200px;">
+        <section id="Contact" class="border-2 pt-3 pb-3 border-top border-dark ms-3 me-3" style="height: 200px;">
             <h1>Contact</h1>
         </section>
 
         <section class="pt-3 pb-3 border-bottom border-dark ms-3 me-3" style="height: 200px;"></section>
     </article>
+
 
     
 </body>
