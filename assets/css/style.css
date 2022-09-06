@@ -42,3 +42,36 @@ body{
 .top-20{
     top: 20% !important;
 }
+
+
+@media only screen and (min-width: 750px) {
+
+    header{
+        flex-direction: column;
+        height: 100% !important;
+        width: 20% !important;
+        border-bottom: 0 !important;
+        border-right: 1px solid #5D6063;
+    
+    }
+
+    article{
+        height: 100% !important;
+        width: 80% !important;
+        left: 20% !important;
+    }
+
+    .top-20{
+        top: 0 !important;
+    }
+
+    .buttonscontainer,
+    .titlecontainer{
+        display: block !important;
+        
+    }
+
+    .justify-content-between{
+        justify-content: start !important;
+    }
+}
