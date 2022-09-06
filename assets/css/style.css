@@ -15,6 +15,65 @@ body{
     color: #5D6063;
 }
 
+.navbar{
+    background-color: #EDEDED;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    border-bottom: 2px solid #5D6063;
+    width: 100%;
+    height: 20%;
+}
+
+.name-container{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.buttons-container{
+    display: flex;
+    margin: 10px;
+}
+
+.about-nav-button,
+.skills-nav-button,
+.contact-nav-button{
+    display: flex;
+    align-items: center;
+    margin-left: 7px;
+}
+
+.about-nav-button a,
+.skills-nav-button a,
+.contact-nav-button a{
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+article {
+    position: fixed;
+    top: 20%;
+    overflow: scroll;
+    height: 80%; 
+    width: 100%;
+
+}
+
+section {
+    border-bottom: 2px solid #5D6063;
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 200px;
+}
+
+
+
+
+
+
 .bg-light{
     background-color: #EDEDED !important;
 }
@@ -52,6 +111,7 @@ body{
         width: 20% !important;
         border-bottom: 0 !important;
         border-right: 1px solid #5D6063;
+        justify-content: start !important;
     
     }
 
@@ -59,19 +119,14 @@ body{
         height: 100% !important;
         width: 80% !important;
         left: 20% !important;
+        top: 0;
     }
 
-    .top-20{
-        top: 0 !important;
-    }
+    
 
-    .buttonscontainer,
-    .titlecontainer{
+    .buttons-container,
+    .name-container{
         display: block !important;
         
-    }
-
-    .justify-content-between{
-        justify-content: start !important;
     }
 }
