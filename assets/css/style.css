@@ -22,18 +22,41 @@ body{
     position: fixed;
     border-bottom: 2px solid #5D6063;
     width: 100%;
-    height: 20%;
+    height: 15%;
 }
 
-h1 {
-    margin: 10px;
+h1,
+nav {
     display: flex;
     align-items: center;
 }
 
+.nav{
+    margin-right: 15px;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+h1 {
+    font-size: 22px;
+    margin: 15px;
+    margin-right: 0;
+}
+
 .buttons-container{
     display: flex;
-    margin: 10px;
+    margin-right: 15px;
+    padding-left: 0;
+}
+
+.buttons-container a {
+    border: 2px solid #5D6063;
+    border-radius: 3px;
+    padding: 6px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #5D6063;
+
 }
 
 .about-link,
@@ -41,23 +64,15 @@ h1 {
 .contact-link{
     display: flex;
     align-items: center;
-    margin-left: 7px;
 }
 
-.about-link a,
-.skills-link a,
-.contact-link a{
-    padding-right: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-decoration: none;
-}
+
 
 .content {
     position: fixed;
     top: 20%;
     overflow: scroll;
-    height: 80%; 
+    height: 85%; 
     width: 100%;
 
 }
