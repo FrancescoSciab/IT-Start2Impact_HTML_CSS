@@ -25,7 +25,7 @@ body{
     height: 20%;
 }
 
-.name-container{
+h1 {
     margin: 10px;
     display: flex;
     align-items: center;
@@ -36,24 +36,24 @@ body{
     margin: 10px;
 }
 
-.about-nav-button,
-.skills-nav-button,
-.contact-nav-button{
+.about-link,
+.skills-link,
+.contact-link{
     display: flex;
     align-items: center;
     margin-left: 7px;
 }
 
-.about-nav-button a,
-.skills-nav-button a,
-.contact-nav-button a{
+.about-link a,
+.skills-link a,
+.contact-link a{
     padding-right: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
     text-decoration: none;
 }
 
-article {
+.content {
     position: fixed;
     top: 20%;
     overflow: scroll;
@@ -71,62 +71,35 @@ section {
 
 
 
-
-
-
-.bg-light{
-    background-color: #EDEDED !important;
-}
-
-.border-dark{
-    border-color: #5D6063;
-}
-
-.about-nav-button:hover {
-    transform: scale(1.2);
-}
-
-.skills-nav-button:hover {
-    transform: scale(1.2);
-}
-
-.contact-nav-button:hover {
-    transform: scale(1.2);
-}
-
-.pt-10{
-    margin-top: 400px !important;
-}
-
-.top-20{
-    top: 20% !important;
-}
-
-
 @media only screen and (min-width: 750px) {
 
-    header{
+    .navbar {
         flex-direction: column;
-        height: 100% !important;
-        width: 20% !important;
-        border-bottom: 0 !important;
+        height: 100%;
+        width: 20%;
+        border-bottom: 0;
         border-right: 1px solid #5D6063;
-        justify-content: start !important;
+        justify-content: start;
     
     }
 
-    article{
+    .content{
         height: 100% !important;
         width: 80% !important;
         left: 20% !important;
         top: 0;
     }
 
+    section{
+        margin-right: 0;
+        margin-left: 0;
+    }
+
     
 
     .buttons-container,
-    .name-container{
-        display: block !important;
+    h1{
+        display: block;
         
     }
 }
