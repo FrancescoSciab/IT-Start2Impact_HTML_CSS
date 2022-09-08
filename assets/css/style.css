@@ -3,6 +3,11 @@
     src: url(../font/Roboto-Light-webfont.woff) format(woff);
 }
 
+@font-face {
+    font-family: "Roboto Bold";
+    src: url(../font/Roboto-Bold-webfont.woff) format(woff);
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -25,6 +30,9 @@ body{
     height: 15%;
 }
 
+h1{
+    font-weight: bold;
+}
 h1,
 nav {
     display: flex;
@@ -47,10 +55,11 @@ h1 {
     display: flex;
     margin-right: 15px;
     padding-left: 0;
+    margin-left: 15px;
 }
 
 .buttons-container a {
-    border: 2px solid #5D6063;
+    border: 1px solid #5D6063;
     border-radius: 3px;
     padding: 6px;
     margin-right: 10px;
@@ -95,13 +104,12 @@ section {
         border-bottom: 0;
         border-right: 1px solid #5D6063;
         justify-content: start;
-    
     }
 
     .content{
-        height: 100% !important;
-        width: 80% !important;
-        left: 20% !important;
+        height: 100%;
+        width: 80%;
+        left: 20%;
         top: 0;
     }
 
@@ -110,11 +118,29 @@ section {
         margin-left: 0;
     }
 
-    
-
-    .buttons-container,
-    h1{
-        display: block;
+    .buttons-container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         
     }
+
+
+    .buttons-container a {
+        padding: 10px 20px;
+    }
+
+    .buttons-container a:link,
+    .buttons-container a:visited {
+        padding: 10px 20px;
+    }
+
+    .buttons-container a:hover,
+    .buttons-container a:hover:visited{
+        background-color: #5D6063;
+        color: #EDEDED;
+        border-color: #EDEDED;
+    }
+    
 }
