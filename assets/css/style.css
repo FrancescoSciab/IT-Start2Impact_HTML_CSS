@@ -13,9 +13,6 @@
 body{
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
     background-color: #EDEDED;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
@@ -26,45 +23,50 @@ body{
     background-color: #EDEDED;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
-    border-bottom: 2px solid #5D6063;
+    border-bottom: 3px solid #5D6063;
     width: 100%;
     height: 15%;
 }
 
-h1{
+.navbar h1{
     font-family: 'Roboto', sans-serif;
+    font-size: 20px;
     font-weight: 500;
-    
+    margin-left: 15px;
 }
 
-h1,
-nav {
-    display: flex;
-    align-items: center;
-}
-
-
-.navbar h1 {
-    font-size: 22px;
-    margin: 15px;
-    margin-right: 0;
+nav{
+    margin-right: 15px;
 }
 
 .buttons-container{
     display: flex;
     justify-content: space-between;
-    margin-right: 15px;
-    padding-left: 0;
+    align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
 .buttons-container a {
     border: 1px solid #5D6063;
     border-radius: 3px;
-    padding: 6px;
     margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 60px;
     text-decoration: none;
     color: #5D6063;
+}
+
+.buttons-container a:active,
+.buttons-container a:visited:active{
+        background-color: #5D6063;
+        color: #EDEDED;
+        border-color: #EDEDED;
 }
 
 .contact-link a {
@@ -78,15 +80,12 @@ nav {
     align-items: center;
 }
 
-
-
 .content {
     position: fixed;
     top: 15%;
     overflow: scroll;
     height: 85%; 
     width: 100%;
-
 }
 
 section {
@@ -97,6 +96,7 @@ section {
 .first-section {
     padding-left: 0;
 }
+
 .first-section header{
     display: flex;
     justify-content: center;
@@ -111,42 +111,42 @@ section {
     text-align: center;
 }
 
-#About,
-#Skills,
-#Contact{
-    padding-bottom: 40px;
-    padding-right: 40px;
-}
-
 #About h1,
 #Skills h1,
 #Contact h1{
     font-size: 30px;
+    padding-top: 40px;
+    margin: 0;
+    margin: 0;
 }
 
 #About p{
-    padding-left: 20px;
-    padding-right: 20px;
+    margin: 0;
+    padding: 20px;
     font-weight: 300;
 }
 
+#Skills ul{
+    margin: 0;
+    padding: 20px;
+}
 
-#Skills h1{
-    padding-top: 40px;
+#Skills li{
+    list-style-type: none;
+    font-weight: 300;
+    padding-bottom: 10px;
     margin: 0;
 }
 
 #Skills h2{
-    font-weight: 300;
-    padding-right: 20px;
-    padding-left: 20px;
     font-size: 20px;
+    font-weight: 200;
+    margin: 0;
 }
 
-#Contact a,
-#Contact h2{
+#Contact a{
     padding-left: 20px;
-    padding-top: 20px;
+    margin-top: 20px;
     font-weight: 300;
 }
 
@@ -177,28 +177,18 @@ section {
     }
 
     .navbar h1{
-        margin: 40px;
-    }
-
-    .content{
-        height: 100%;
-        width: 80%;
-        left: 20%;
-        top: 0;
-    }
-
-    section{
-        margin: 0;
+        font-size: 30px;
+        margin-top: 40px;
+        margin-left: 0;
+        margin-bottom: 0;
     }
 
     .buttons-container{
-        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        
+        justify-content: center;
     }
-
 
     .buttons-container a {
         padding: 10px 20px;
@@ -210,16 +200,30 @@ section {
     }
 
     .buttons-container a:hover,
-    .buttons-container a:hover:visited{
+    .buttons-container a:visited:hover{
         background-color: #5D6063;
         color: #EDEDED;
         border-color: #EDEDED;
+}
+
+    .content{
+        height: 100%;
+        width: 80%;
+        left: 20%;
+        top: 0;
     }
     
     .first-section h1{
         font-size: 90px;
         font-weight: 550;
         padding: 60px;
+    }
+
+    #About,
+    #Skills,
+    #Contact{
+    padding-bottom: 40px;
+    padding-right: 40px;
     }
 
     #About p{
@@ -235,5 +239,17 @@ section {
         padding-left: 40px;
         padding-top: 40px;
         margin: 0;
+    }
+
+
+    #Skills ul{
+        padding-left: 40px;
+    }
+
+    #Contact ul,
+    #Contact h2,
+    #Contact a{
+        margin: 0;
+        padding-left: 40px;
     }
 }
