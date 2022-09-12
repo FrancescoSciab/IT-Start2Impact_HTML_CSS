@@ -60,13 +60,15 @@ nav{
     width: 60px;
     text-decoration: none;
     color: #5D6063;
+    transition: ease-out 0.5s;
+    transition-delay: 0.3s;
 }
 
 .buttons-container a:active,
 .buttons-container a:visited:active{
-        background-color: #5D6063;
-        color: #EDEDED;
-        border-color: #EDEDED;
+    transform: scale(0.8);
+    transition: ease-out 0.5s;
+        
 }
 
 .contact-link a {
@@ -124,6 +126,7 @@ section {
     margin: 0;
     padding: 20px;
     font-weight: 300;
+    line-height: 1.8em;
 }
 
 #Skills ul{
@@ -159,6 +162,24 @@ section {
     list-style-type: none;
 }
 
+#Contact h1,
+#Contact h2{
+    padding-bottom: 20px;
+}
+
+#Contact h2{
+    margin: 0;
+    padding-top: 20px;
+}
+
+#Contact li{
+    padding-bottom: 10px;
+}
+
+#Contact iframe {
+    margin-left: 20px;
+    margin-top: 20px;
+}
 #Contact a:link,
 #Contact a:visited {
     color: #5D6063;
@@ -192,6 +213,10 @@ section {
 
     .buttons-container a {
         padding: 10px 20px;
+        margin: 0;
+        transition: ease-out 0.5s;
+        transition-delay: 0.3s;
+        width: 100px;
     }
 
     .buttons-container a:link,
@@ -204,7 +229,9 @@ section {
         background-color: #5D6063;
         color: #EDEDED;
         border-color: #EDEDED;
-}
+        width: 130px;
+        transition: ease-out 0.5s;
+    }
 
     .content{
         height: 100%;
@@ -246,10 +273,13 @@ section {
         padding-left: 40px;
     }
 
-    #Contact ul,
+    
     #Contact h2,
     #Contact a{
         margin: 0;
         padding-left: 40px;
+    }
+    #Contact iframe {
+        margin-left: 40px;
     }
 }
