@@ -87,7 +87,7 @@ nav{
     top: 15%;
     overflow: scroll;
     height: 85%; 
-    width: 100%;
+    width: 100%;    
 }
 
 section {
@@ -111,6 +111,20 @@ section {
     font-weight: 550;
     font-size: 40px;
     text-align: center;
+}
+
+.photo-section{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    justify-content: inherit;
+    align-items: inherit;
+
+}
+
+.photo-section img{
+    display: block;
+    width: 100%;
 }
 
 #About h1,
@@ -186,7 +200,7 @@ section {
 }
 
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 700px) {
 
     .navbar {
         flex-direction: column;
