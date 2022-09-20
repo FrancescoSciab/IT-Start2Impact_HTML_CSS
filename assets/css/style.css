@@ -1,0 +1,312 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../font/Roboto-Light-webfont.woff) format(woff);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(../font/Roboto-Bold-webfont.woff) format(woff);
+    font-weight: 700;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+
+    background-color: #f2e5d7;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #262322;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 15%;
+
+    background-color: #f2e5d7;
+    border-bottom: 3px solid #262322;
+    box-shadow: rgba(0, 0, 0, 0.40) 1.95px 1.95px 2.6px;
+}
+
+.navbar h1{
+    margin-left: 15px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+nav{
+    margin-right: 15px;
+}
+
+.buttons-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.buttons-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 60px;
+
+    border: 1px solid #262322;
+    border-radius: 3px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #262322;
+
+    transition: ease-out 0.5s;
+    transition-delay: 0.3s;
+}
+
+.buttons-container a:active,
+.buttons-container a:visited:active{
+    transform: scale(0.8);
+    transition: ease-out 0.5s;
+        
+}
+
+.contact-link a {
+    margin-right: 0;
+}
+
+.about-link,
+.skills-link,
+.contact-link{
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    position: fixed;
+    top: 15%;
+    overflow: scroll;
+    height: 85%; 
+    width: 100%;    
+}
+
+section {
+    border-bottom: 3px solid #262322;
+    padding-left: 30px;
+}
+
+section:last-of-type{
+    border-bottom: 0;
+}
+.first-section {
+    padding-left: 0;
+}
+
+.first-section header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-section h1{
+    padding: 30px 20px;
+    text-align: center;
+
+    font-family: 'Roboto-Bold', sans-serif;
+    font-weight: 550;
+    font-size: 40px;
+}
+
+.photo-section{
+    margin: 0;
+    padding: 0;
+}
+
+.photo-section img{
+    display: block;
+    width: 100%;
+}
+
+#About h1,
+#Skills h1,
+#Contact h1{
+    padding-top: 40px;
+    margin: 0;
+    margin: 0;
+
+    font-size: 30px;
+    
+    transition: 0.5s;
+}
+
+#About p{
+    margin: 0;
+    padding: 20px;
+    line-height: 1.8em;
+
+    font-weight: 300;
+}
+
+#Skills ul{
+    margin: 0;
+    padding: 20px;
+}
+
+#Skills li{
+    padding-bottom: 10px;
+    margin: 0;
+
+    list-style-type: none;
+    font-weight: 300;
+}
+
+#Skills h2{
+    margin: 0;
+
+    font-size: 20px;
+    font-weight: 200;
+}
+
+#Contact a{
+    padding-left: 20px;
+    margin-top: 20px;
+
+    font-weight: 300;
+}
+
+#Contact ul{
+    margin: 0;
+    padding: 0;
+}
+
+#Contact li{
+    list-style-type: none;
+}
+
+#Contact h1,
+#Contact h2{
+    padding-bottom: 20px;
+}
+
+#Contact h2{
+    margin: 0;
+    padding-top: 20px;
+}
+
+#Contact li{
+    padding-bottom: 10px;
+}
+
+#Contact iframe {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#Contact a:link,
+#Contact a:visited {
+    color: #262322;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        height: 100%;
+        width: 20%;
+        border-bottom: 0;
+        border-right: 3px solid #262322;
+        justify-content: start;
+    }
+
+    .navbar h1{
+        font-size: 30px;
+        margin-top: 40px;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .buttons-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .buttons-container a {
+        padding: 10px 20px;
+        margin: 0;
+        transition: ease-out 0.5s;
+        transition-delay: 0.3s;
+        width: 100px;
+    }
+
+    .buttons-container a:link,
+    .buttons-container a:visited {
+        padding: 10px 20px;
+    }
+
+    .buttons-container a:hover,
+    .buttons-container a:visited:hover{
+        background-color: #262322;
+        color: #f2e5d7;
+        border-color: #f2e5d7;
+        width: 130px;
+        transition: ease-out 0.5s;
+    }
+
+    .content{
+        height: 100%;
+        width: 80%;
+        left: 20%;
+        top: 0;
+    }
+    
+    .first-section h1{
+        font-size: 90px;
+        font-weight: 550;
+        padding: 60px;
+    }
+
+    #About,
+    #Skills,
+    #Contact{
+    padding-bottom: 40px;
+    padding-right: 40px;
+    }
+
+    #About p{
+        padding-top: 40px;
+        padding-left: 40px;
+        margin: 0;
+    }
+
+    #About h1,
+    #Skills h1,
+    #Contact h1{
+        font-size: 40px;
+        padding-left: 40px;
+        padding-top: 40px;
+        margin: 0;
+    }
+
+
+    #Skills ul{
+        padding-left: 40px;
+    }
+
+    
+    #Contact h2,
+    #Contact a{
+        margin: 0;
+        padding-left: 40px;
+    }
+    #Contact iframe {
+        margin-left: 40px;
+    }
+}
