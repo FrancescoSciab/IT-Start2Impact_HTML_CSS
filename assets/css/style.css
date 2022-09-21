@@ -94,6 +94,7 @@ nav{
     overflow: scroll;
     height: 85%; 
     width: 100%;    
+    scroll-behavior: smooth;
 }
 
 section {
