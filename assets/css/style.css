@@ -173,6 +173,11 @@ section:last-of-type{
     font-weight: 200;
 }
 
+#Skills a{
+    padding-top: 20px;
+    color: #262322;
+}
+
 #Contact a{
     padding-left: 20px;
     margin-top: 20px;
