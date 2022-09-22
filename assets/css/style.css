@@ -37,7 +37,7 @@ body{
     margin-left: 15px;
 
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 500;
 }
 
@@ -53,12 +53,15 @@ nav{
     margin: 0;
 }
 
+.buttons-container h6{
+    font-size: 9px;
+}
 .buttons-container a {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 25px;
-    width: 60px;
+    width: 65px;
 
     border: 1px solid #262322;
     border-radius: 3px;
@@ -70,9 +73,12 @@ nav{
     transition-delay: 0.3s;
 }
 
-.buttons-container a:active,
-.buttons-container a:visited:active{
-    transform: scale(0.8);
+.buttons-container a:hover,
+.buttons-container a:visited:hover{
+    background-color: #262322;
+    color: #f2e5d7;
+    border-color: #f2e5d7;
+    transform: scale(0.9);
     transition: ease-out 0.5s;
         
 }
@@ -99,6 +105,7 @@ nav{
 
 section {
     border-bottom: 3px solid #262322;
+    padding-right: 30px;
     padding-left: 30px;
 }
 
@@ -106,7 +113,7 @@ section:last-of-type{
     border-bottom: 0;
 }
 .first-section {
-    padding-left: 0;
+    padding: 0;
 }
 
 .first-section header{
@@ -143,20 +150,26 @@ section:last-of-type{
 
     font-size: 30px;
     
-    transition: 0.5s;
 }
 
 #About p{
     margin: 0;
     padding: 20px;
     line-height: 1.8em;
+    text-justify: auto;
 
     font-weight: 300;
+}
+
+#About p:last-child{
+    padding-top: 0;
+    padding-bottom: 40px;
 }
 
 #Skills ul{
     margin: 0;
     padding: 20px;
+    padding-bottom: 40px;
 }
 
 #Skills li{
@@ -212,6 +225,7 @@ section:last-of-type{
 #Contact iframe {
     margin-left: 20px;
     margin-top: 20px;
+    margin-bottom: 40px;
 }
 #Contact a:link,
 #Contact a:visited {
@@ -231,7 +245,7 @@ section:last-of-type{
     }
 
     .navbar h1{
-        font-size: 30px;
+        font-size: 23px;
         margin-top: 40px;
         margin-left: 0;
         margin-bottom: 0;
@@ -244,12 +258,19 @@ section:last-of-type{
         justify-content: center;
     }
 
+    nav{
+        margin-right: 0;
+    }
+
+    .buttons-container h6{
+        font-size: 11px;
+    }
     .buttons-container a {
         padding: 10px 20px;
         margin: 0;
         transition: ease-out 0.5s;
         transition-delay: 0.3s;
-        width: 100px;
+        width: 90px;
     }
 
     .buttons-container a:link,
@@ -259,11 +280,9 @@ section:last-of-type{
 
     .buttons-container a:hover,
     .buttons-container a:visited:hover{
-        background-color: #262322;
-        color: #f2e5d7;
-        border-color: #f2e5d7;
+        
         width: 130px;
-        transition: ease-out 0.5s;
+        
     }
 
     .content{
@@ -279,15 +298,9 @@ section:last-of-type{
         padding: 60px;
     }
 
-    #About,
-    #Skills,
-    #Contact{
-    padding-bottom: 40px;
-    padding-right: 40px;
-    }
-
+    
     #About p{
-        padding-top: 40px;
+        padding-top: 20px;
         padding-left: 40px;
         margin: 0;
     }
@@ -314,5 +327,15 @@ section:last-of-type{
     }
     #Contact iframe {
         margin-left: 40px;
+    }
+}
+
+@media only screen and (min-width: 950px){
+    .navbar h1{
+        font-size: 30px;
+    }
+
+    .buttons-container a{
+        width: 100px;
     }
 }
