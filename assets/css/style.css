@@ -56,6 +56,7 @@ nav{
 .buttons-container h6{
     font-size: 9px;
 }
+
 .buttons-container a {
     display: flex;
     align-items: center;
@@ -112,6 +113,7 @@ section {
 section:last-of-type{
     border-bottom: 0;
 }
+
 .first-section {
     padding: 0;
 }
@@ -131,12 +133,12 @@ section:last-of-type{
     font-size: 40px;
 }
 
-.photo-section{
+.profile-picture-section{
     margin: 0;
     padding: 0;
 }
 
-.photo-section img{
+.profile-picture-section img{
     display: block;
     width: 100%;
 }
@@ -149,7 +151,6 @@ section:last-of-type{
     margin: 0;
 
     font-size: 30px;
-    
 }
 
 #About p{
@@ -226,7 +227,10 @@ section:last-of-type{
     margin-left: 20px;
     margin-top: 20px;
     margin-bottom: 40px;
+
+    box-shadow: rgba(0, 0, 0, 0.40) 1.95px 1.95px 2.6px;
 }
+
 #Contact a:link,
 #Contact a:visited {
     color: #262322;
@@ -265,6 +269,7 @@ section:last-of-type{
     .buttons-container h6{
         font-size: 11px;
     }
+
     .buttons-container a {
         padding: 10px 20px;
         margin: 0;
@@ -280,9 +285,7 @@ section:last-of-type{
 
     .buttons-container a:hover,
     .buttons-container a:visited:hover{
-        
         width: 130px;
-        
     }
 
     .content{
@@ -298,7 +301,6 @@ section:last-of-type{
         padding: 60px;
     }
 
-    
     #About p{
         padding-top: 20px;
         padding-left: 40px;
@@ -314,21 +316,21 @@ section:last-of-type{
         margin: 0;
     }
 
-
     #Skills ul{
         padding-left: 40px;
     }
 
-    
     #Contact h2,
     #Contact a{
         margin: 0;
         padding-left: 40px;
     }
+
     #Contact iframe {
         margin-left: 40px;
     }
 }
+
 
 @media only screen and (min-width: 950px){
     .navbar h1{
