@@ -111,3 +111,77 @@ section {
     :last-of-type{
         border-bottom: 0;
     }
+}
+
+.first-section {
+    padding-left: 0;
+
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1{
+        padding: 30px 20px;
+        text-align: center;
+
+        font-family: 'Roboto-Bold', sans-serif;
+        font-weight: 550;
+        font-size: 40px;
+    }
+}
+
+.photo-section{
+    margin: 0;
+    padding: 0;
+
+    img{
+        display: block;
+        width: 100%;
+    }
+}
+
+#About h1,
+#Skills h1,
+#Contact h1{
+    padding-top: 40px;
+    margin: 0;
+    margin: 0;
+
+    font-size: 30px;
+    
+    transition: 0.5s;
+}
+
+#About p{
+    margin: 0;
+    padding: 20px;
+    line-height: 1.8em;
+
+    font-weight: 300;
+}
+
+#Skills{
+    
+    ul{
+        margin: 0;
+        padding: 20px;
+    }
+
+    li{
+        padding-bottom: 10px;
+        margin: 0;
+
+        list-style-type: none;
+        font-weight: 300;
+    }
+
+    h2{
+        margin: 0;
+
+        font-size: 20px;
+        font-weight: 200;
+    }
+}
+
