@@ -1,0 +1,30 @@
+.buttons-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+
+        a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 25px;
+                width: 60px;
+    
+        border: 1px solid #262322;
+        border-radius: 3px;
+        margin-right: 10px;
+        text-decoration: none;
+        color: #262322;
+    
+        transition: ease-out 0.5s;
+        transition-delay: 0.3s;
+        }
+
+        a:active,
+        a:visited:active{
+        transform: scale(0.8);
+        transition: ease-out 0.5s;
+        }
+}

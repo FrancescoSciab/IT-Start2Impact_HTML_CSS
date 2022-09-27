@@ -1,3 +1,5 @@
+@import "mobile-buttons";
+
 @font-face {
     font-family: "Roboto";
     src: url(../font/Roboto-Light-webfont.woff) format(woff);
@@ -44,35 +46,6 @@ nav{
     margin-right: 15px;
 }
 
-.buttons-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-
-    a{display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 25px;
-        width: 60px;
-    
-        border: 1px solid #262322;
-        border-radius: 3px;
-        margin-right: 10px;
-        text-decoration: none;
-        color: #262322;
-    
-        transition: ease-out 0.5s;
-        transition-delay: 0.3s;
-    }
-
-    a:active,
-    a:visited:active{
-            transform: scale(0.8);
-            transition: ease-out 0.5s;
-    }
-}
 
 .contact-link a {
     margin-right: 0;
@@ -227,9 +200,9 @@ section {
 }
 
 
-
+@import "desktop-buttons";
 @media only screen and (min-width: 768px) {
-    .navbar{
+    .navbar {
         flex-direction: column;
         height: 100%;
         width: 20%;
@@ -245,38 +218,7 @@ section {
         }
     }
 
-
-    .buttons-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        a {
-            padding: 10px 20px;
-            margin: 0;
-            transition: ease-out 0.5s;
-            transition-delay: 0.3s;
-            width: 100px;
-
-            :link,
-            :visited{
-                padding: 10px 20px;
-            }
-
-            :hover,
-            :visited:hover {
-                background-color: #262322;
-                color: #f2e5d7;
-                border-color: #f2e5d7;
-                width: 130px;
-                transition: ease-out 0.5s;
-            }
-        }
-    }
-
-
-    .content{
+    .content {
         height: 100%;
         width: 80%;
         left: 20%;
@@ -325,4 +267,3 @@ section {
         }
     }
 }
-
