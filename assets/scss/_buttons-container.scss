@@ -58,6 +58,25 @@ button{
 
 
 @media only screen and (min-width: 768px){
+%desktop-buttons{
+                padding: 10px 20px;
+                margin: 0;
+                transition: ease-out 0.5s;
+                transition-delay: 0.3s;
+                &:link,
+                &:visited{
+                padding: 10px 20px;
+                }
+
+                &:hover,
+                &:visited:hover {
+                background-color: #262322;
+                color: #f2e5d7;
+                border-color: #f2e5d7;
+                transition: ease-out 0.5s;
+        }
+}
+
 .buttons-container {
         @extend %flex;
         flex-direction: column;
@@ -83,5 +102,13 @@ button{
                 transition: ease-out 0.5s;
             }
         }
+
+
+        
 }
+
+button{
+        @extend %desktop-buttons;
+        width: 460px;
+        }
 }
