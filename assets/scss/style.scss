@@ -20,6 +20,10 @@ body{
     font-family: $font-stack;
     font-size: 18px;
     color: $secondary-color;
+    width: 100%;
+    height: 100%;
+    
+
 }
 
 .navbar{
@@ -71,10 +75,12 @@ nav{
 
 .content {
     position: fixed;
+    z-index: 1;
     top: 15%;
     overflow: scroll;
     height: 85%; 
-    width: 100%;    
+    width: 100%; 
+      
 }
 
 section {
@@ -156,7 +162,36 @@ section {
     }
 }
 
+#Skills a:hover #cv {
+    display: block;
+    z-index: 1;
+}
+
+#cv{
+    position: fixed;
+    left: 25%;
+    display: none;
+}
+
+
 #Contact{
+    input[type="text"],
+    input[type="email"],
+    textarea{
+        width: 200px;
+        border: 1px solid $secondary-color;
+        border-radius: 3px;
+        padding: 7px;
+        font-size: 14px;
+        background-color: $secondary-background;
+        margin-bottom: 10px;
+    }
+
+    textarea{
+        width: 200px;
+    }
+
+
     a{
         padding-left: 20px;
         margin-top: 20px;
@@ -197,6 +232,22 @@ section {
     }
 }
 
+.form{
+    margin-left: 40px;
+    box-shadow: $half-shadow;
+}
+
+.name-email-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.name-section,
+.email-section,
+.text-section{
+    display: flex;
+    flex-direction: column;
+}
 
 
 @media only screen and (min-width: 768px) {
@@ -258,6 +309,14 @@ section {
     }
 
     #Contact{
+        input[type="text"]{
+            margin-right: 30px;
+        }
+
+        textarea{
+            width: 445px;
+        }
+
         h2,
         a{
             margin: 0;
@@ -267,6 +326,10 @@ section {
         iframe {
             margin-left: 40px;
         }
+    }
+
+    .name-email-container{
+        flex-direction: row;
     }
 }
 
