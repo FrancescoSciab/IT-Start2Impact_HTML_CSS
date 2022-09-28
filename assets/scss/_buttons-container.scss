@@ -4,6 +4,24 @@
         justify-content: center;
 }
 
+%mobile-buttons{
+        border: 1px solid #262322;
+        border-radius: 3px;
+        color: #262322;
+
+        transition: ease-out 0.5s;
+        transition-delay: 0.3s;
+
+        &:active,
+        &:visited:active{
+                background-color: #262322;
+                color: #f2e5d7;
+                border-color: #f2e5d7;
+                transform: scale(0.8);
+                transition: ease-out 0.5s;
+                }
+}
+
 $font-stack: 'Roboto', sans-serif;
 $main-color: #f2e5d7;
 $secondary-color: #262322;
@@ -20,28 +38,23 @@ $half-shadow: rgba(0, 0, 0, 0.40) 1.95px 1.95px 2.6px;
 
         a{
                 @extend %flex;
+                @extend %mobile-buttons;
                 height: 25px;
                 width: 60px;
 
-                border: 1px solid #262322;
-                border-radius: 3px;
                 margin-right: 10px;
                 text-decoration: none;
-                color: #262322;
-        
-                transition: ease-out 0.5s;
-                transition-delay: 0.3s;
-
-                &:active,
-                &:visited:active{
-                background-color: #262322;
-                color: #f2e5d7;
-                border-color: #f2e5d7;
-                transform: scale(0.8);
-                transition: ease-out 0.5s;
-             }
         }      
 }
+
+button{
+        @extend %mobile-buttons;
+        width: 217px;
+        cursor: pointer;
+        background-color: $main-color;
+        color: $secondary-color;
+        border: 1px solid $secondary-color;
+        }
 
 
 @media only screen and (min-width: 768px){

@@ -235,6 +235,7 @@ section {
 .form{
     margin-left: 40px;
     box-shadow: $half-shadow;
+    padding-bottom: 10px;
 }
 
 .name-email-container{
@@ -248,6 +249,7 @@ section {
     display: flex;
     flex-direction: column;
 }
+
 
 
 @media only screen and (min-width: 768px) {
@@ -330,6 +332,26 @@ section {
 
     .name-email-container{
         flex-direction: row;
+    }
+
+    button{
+        padding: 10px 20px;
+        margin: 0;
+        transition: ease-out 0.5s;
+        transition-delay: 0.3s;
+        width: 100px;
+        :link,
+        :visited{
+            padding: 10px 20px;
+        }
+        :hover,
+        :visited:hover {
+            background-color: #262322;
+            color: #f2e5d7;
+            border-color: #f2e5d7;
+            width: 130px;
+            transition: ease-out 0.5s;
+        }
     }
 }
 
