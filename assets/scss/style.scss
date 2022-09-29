@@ -234,8 +234,7 @@ section {
 
 .form{
     margin-left: 40px;
-    box-shadow: $half-shadow;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .name-email-container{
@@ -254,7 +253,40 @@ section {
 .cv-content{
     margin: 50px;
 
+    a{
+        color: $secondary-color;
+        font-style: italic;
+        font-weight: bold;
+        &:visited{
+            color: $secondary-color;
+        }
+    }
     
+    h1{
+        a{
+            font-style: normal;
+        }
+    }
+
+    p{
+        line-height: 1.8em;
+    }
+
+    h2{
+        margin-top: 40px;
+    }
+    li{
+        margin-bottom: 20px;
+        line-height: 1.8em;;
+    }
+
+    section{
+        border-bottom: 0;
+    }
+}
+
+#reference{
+    margin-top: 100px;
 }
 
 
@@ -340,6 +372,8 @@ section {
     form{
         margin-left: 40px;
     }
+    
+
     .name-email-container{
         flex-direction: row;
     }
