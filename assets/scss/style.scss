@@ -82,12 +82,10 @@ nav{
 
 .content {
     position: fixed;
-    z-index: 1;
-    top: 15%;
     overflow: scroll;
+    scroll-behavior: smooth;
+    top: 15%;
     height: 85%; 
-    width: 100%; 
-      
 }
 
 section {
