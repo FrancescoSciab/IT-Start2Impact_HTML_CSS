@@ -23,11 +23,12 @@
 }
 
 $font-stack: 'Roboto', sans-serif;
+$font-bold-stack: 'Roboto-Bold', sans-serif;
+$font-italic-bold-stack: "Roboto-Italic-Bold", sans-serif;
 $main-color: #f2e5d7;
 $secondary-color: #262322;
 $secondary-background: #F6F7F8;
 $half-shadow: rgba(0, 0, 0, 0.40) 1.95px 1.95px 2.6px;
-//to type whole shadow//
 
 
 .buttons-container{
@@ -49,12 +50,13 @@ $half-shadow: rgba(0, 0, 0, 0.40) 1.95px 1.95px 2.6px;
 
 button{
         @extend %mobile-buttons;
-        width: 217px;
+        width: 215px;
         padding: 5px 10px;
         cursor: pointer;
         background-color: $secondary-background;
         color: $secondary-color;
         border: 0;
+        box-shadow: $half-shadow;
         }
 
 
@@ -71,9 +73,9 @@ button{
 
                 &:hover,
                 &:visited:hover {
-                background-color: #262322;
-                color: #f2e5d7;
-                border-color: #f2e5d7;
+                background-color: $secondary-color;
+                color: $main-color;
+                border-color: $main-color;
                 transition: ease-out 0.5s;
         }
 }
@@ -96,9 +98,9 @@ button{
 
             &:hover,
             &:visited:hover {
-                background-color: #262322;
-                color: #f2e5d7;
-                border-color: #f2e5d7;
+                background-color: $secondary-color;
+                color: $main-color;
+                border-color: $main-color;
                 width: 130px;
                 transition: ease-out 0.5s;
             }
@@ -110,7 +112,7 @@ button{
 
 button{
         @extend %desktop-buttons;
-        width: 460px;
+        width: 461px;
         border: 0;
         }
 }
