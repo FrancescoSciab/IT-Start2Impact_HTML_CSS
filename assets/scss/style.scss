@@ -148,7 +148,8 @@ section {
     a{
         font-family: $font-bold-stack;
         font-weight: bold;
-        &:visited{
+        &:visited,
+        &:link:visited{
             color: $secondary-color;
         }
     }
@@ -203,7 +204,8 @@ section {
         margin-top: 20px;
 
         font-weight: 300;
-        &:visited{
+        &:visited
+        &:link:visited{
             color: $secondary-color;
         }
     }
@@ -235,15 +237,16 @@ section {
     }
 
     a{
-        :link,
-        :visited{
+        color: $secondary-color;
+        :visited,
+        :link:visited{
             color: $secondary-color;
         }
     }
 }
 
 form{
-    margin-left: 40px;
+    margin-left: 20px;
     padding-bottom: 20px;
 }
 
